@@ -63,8 +63,8 @@ body, html {
 <div class="w3-top">
   <ul class="w3-navbar" id="myNavbar">
     <li><a href="#" class="w3-padding-large">HOME</a></li>
-    <li><a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Dance.html" class="w3-padding-large">DANCE</a></li>
-    <li><a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Photography.html" class="w3-padding-large">PHOTOGRAPHY</a></li>
+    <li><a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Dance1.html" class="w3-padding-large">DANCE/MUSICAL THEATRE</a></li>
+    <li><a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Photography1.html" class="w3-padding-large">PHOTOGRAPHY</a></li>
     <li><a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Poetry.html" class="w3-padding-large">POETRY</a></li>
     <li><a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Coding.html" class="w3-padding-large">CODING</a></li>
     <li class="w3-hide-small w3-right">
@@ -111,7 +111,7 @@ body, html {
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64">
   <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest works from dance to photography.<br> Click on the images to make them bigger</em></p><br>
+  <p class="w3-center"><em>Here are some of my latest works</em></p>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
@@ -131,8 +131,8 @@ body, html {
       <img src="NightLight.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
-
-  <div class="w3-row-padding w3-center w3-section">
+  
+  <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
       <img src="MirrorTree.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
@@ -149,7 +149,7 @@ body, html {
       <img src="Bloom.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
-</div>
+
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -204,8 +204,8 @@ body, html {
   <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
 </footer>
  
-<!-- Add Google Maps
-<script src="http://maps.googleapis.com/maps/api/js"></script>
+<!-- Add Google Maps-->
+<!--<script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
 var myCenter = new google.maps.LatLng(41.878114, -87.629798);
 
@@ -228,7 +228,8 @@ marker.setMap(map);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
+</script>-->
+<script>
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -245,7 +246,7 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
 }
-</script>-->
+</script>
 
 </body>
 </html>
