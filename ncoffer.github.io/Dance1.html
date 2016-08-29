@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="Ritz.png" style="width:60%;" onclick="onClick(this)" class="w3-hover-opacity class="w3-round"><br><br>
+    <h4 class="w3-padding-0"><b>DANCE/MUSICAL THEATRE</b></h4>
+  </div>
+  <a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/index.html" class="w3-padding">HOME</a>
+  <a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Dance:MusicalTheatreAbout.html" class="w3-padding">ABOUT</a>
+  <a href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Dance1.html" class="w3-padding">PORTFOLIO</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="http://www.linkedin.com/in/nia-c-055765122" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container">
+    <a href="#"><img src="img_avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>Dance & Musical Theatre Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span>
+      <button class="w3-btn">ALL</button>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="IHAD.png" style="width:60%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>I Have a Dream</b></p>
+        <p>Choreography by Dance Ensemble</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Lift.png" style="width:80%"  onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Alyssa's Piece</b></p>
+        <p>Choreography by Alyssa Carnahan </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="NitGrit1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Prituri Se Planinata (NiT GriT Remix)</b></p>
+        <p>Choreography by Nia Coffer</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="NitGrit2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Prituri Se Planinata (NiT GriT Remix)</b></p>
+        <p>Choreography by Nia Coffer</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Solo3.png" style="width:80%"  onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Where Are You Now by Pentatonix</b></p>
+        <p>Choreography by Nia Coffer</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="Solo1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Where Are You Now by Pentatonix</b></p>
+        <p> Choreography by Nia Coffer</p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <ul class="w3-pagination">
+      <li><a class="w3-black" href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Dance1.html">1</a></li>
+      <li><a class="w3-hover-black" href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Dance2.html">2</a></li>
+      <li><a class="w3-hover-black" href="file:///Users/niacoffer/Desktop/ncoffer.github.io/Dance3.html">3</a></li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <!--<div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="img_workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="img_gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>-->
+
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
